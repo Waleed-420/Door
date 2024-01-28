@@ -14,6 +14,7 @@ void lockdoor();
 bool isDoorOpen();
 bool isDoorLocked();
 };
+h
 void door::opendoor() {
     if (!isLocked)
         isOpen = true;
