@@ -31,6 +31,13 @@ void door::lockdoor() {
     else
         cout << "Cannot lock the door when it's open.\n";
 }
+bool door::isDoorOpen() {
+    return isOpen;
+}
+
+bool door::isDoorLocked() {
+    return isLocked;
+}
 
 int main()
 {
