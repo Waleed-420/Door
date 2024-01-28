@@ -21,6 +21,17 @@ void door::opendoor() {
     else
         cout << "The door is locked. Cannot open.\n";
 }
+ void door::closedoor() {
+    isOpen = false;
+}
+
+void door::lockdoor() {
+    if (!isOpen)
+        isLocked = true;
+    else
+        cout << "Cannot lock the door when it's open.\n";
+}
+
 int main()
 {
 }
